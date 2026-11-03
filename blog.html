@@ -3,37 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GLAD MULE — Blog</title>
+  <title>BLOG</title>
 
   <style>
+    @font-face {
+      font-family: "DSEG7";
+      src: url("https://cdn.jsdelivr.net/npm/dseg@0.46.0/fonts/DSEG7-Classic/DSEG7Classic-Bold.woff2")
+        format("woff2");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       padding: 2rem 1.25rem;
-      max-width: 42rem;
-      margin-inline: auto;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 1rem;
-      line-height: 1.5;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: "Times New Roman", Times, serif;
+      color: black;
+      background: white;
+    }
+
+    main {
+      width: 100%;
+      max-width: 650px;
     }
 
     h1 {
-      font-size: 1.75rem;
-      margin-bottom: 1rem;
+      font-family: "DSEG7", monospace;
+      font-size: clamp(1.2rem, 4.5vw, 2rem);
+      font-weight: 700;
+      line-height: 1.6;
+      margin: 0 0 2rem;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
     }
 
     a {
+      display: inline-block;
+      border: 2px solid black;
+      border-radius: 0;
+      padding: 0.65rem 1rem;
+      max-width: 100%;
       color: black;
+      background: white;
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus-visible {
+      background: black;
+      color: white;
     }
   </style>
 </head>
 
 <body>
+  <main>
+    <h1>under construction...</h1>
 
-  <h1>BLOG</h1>
-
-  <p>
-    <a href="index.html">← Home</a>
-  </p>
-
+    <nav class="links" aria-label="Other pages">
+      <a href="allprojects.html">OTHER PROJECTS</a>
+      <a href="allcontacts.html">CONTACT</a>
+    </nav>
+  </main>
 </body>
 </html>
